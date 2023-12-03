@@ -42,12 +42,38 @@ The training process involves minimizing the Mean Squared Error (MSE) leveraging
 
 ![loss](https://github.com/akmchnkv/Movie-Recommender-System/blob/main/reports/figures%20/loss.png)
 
+### Key components of the training process include:
+
+#### Loss Function:
+MSE measures the average squared difference between predicted and true ratings, providing a quantitative measure of the model's performance.
+
+#### Model Optimization:
+Optimization is achieved through gradient descent, specifically Stochastic Gradient Descent. SGD updates the model parameters in the direction that minimizes the loss for each batch of training data. 
+
+#### Batch Training:
+To efficiently handle large datasets, the training data is processed in batches using PyTorch's DataLoader. Batch training enhances computational efficiency and facilitates parallel processing, leading to faster convergence during optimization.
+
+#### Epochs:
+The training process iterates over a predefined number of epochs. An epoch constitutes a complete pass through the entire training dataset. During each epoch, the model learns and refines its parameters based on the training data.
+
+#### Validation:
+Model performance is monitored not only on the training data but also on a separate validation set. Validation data helps prevent overfitting, as the model's ability to generalize to unseen data is crucial.
+
 ## Evaluation
-The evaluation of the recommendation system involves assessing its predictive performance. I simulate scenarios by excluding one movie at a time for each user and predicting its rating. The MSE serves as a metric to quantify the accuracy of the model's predictions, providing a holistic assessment of its effectiveness.
+The evaluation of the Matrix Factorization-based recommendation system involves assessing its predictive performance and generalization to unseen data. A crucial aspect of evaluation is predicting ratings for each user, excluding one movie at a time. 
+
+### Key elements of the evaluation process include:
+
+#### Exclusion Methodology:
+For each user, one movie is excluded from the user's rated movies. The model is then tasked with predicting the rating for the excluded movie based on the user's remaining interactions. This process is repeated for all users and their respective movies.
+
+#### Mean Squared Error (MSE):
+The primary metric for evaluating the model's predictive accuracy is the Mean Squared Error. It quantifies the average squared difference between predicted and true ratings across all predictions. A lower MSE indicates better alignment between predicted and actual ratings.
+
 
 ## Results
-The model's performance is summarized by the Mean Squared Error (=  1.1689), providing an indication of how well the predicted ratings align with the ground truth.
+The primary metric for assessing the model's predictive accuracy is the Mean Squared Error. The obtained MSE of 1.1689 signifies the squared difference between predicted and true ratings across all predictions. Visualizing the distribution of true and predicted ratings through histograms offers insights into the alignment between the model's predictions and the actual user preferences. Surprisingly, a detailed comparison of these distributions reveals a remarkable similarity, suggesting that the recommendation system accurately captures the nuances of user preferences in its predictions.
 
 ![result](https://github.com/akmchnkv/Movie-Recommender-System/blob/main/reports/figures%20/result.png)
 
-In conclusion, the Matrix Factorization-based movie recommendation system demonstrates promising results in capturing user preferences and providing personalized suggestions.
+In conclusion, the Matrix Factorization-based movie recommendation system demonstrates effectiveness in providing accurate and personalized movie suggestions to users. The achieved results highlight the system's ability to learn latent relationships between users and movies
