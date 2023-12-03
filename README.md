@@ -4,7 +4,7 @@
 
 **Name**: Elina Akimchenkova  
 **Email Address**: e.akimchenkova@innopolis.university  
-**Group Number**: B21-DS-02
+**Group Number**: B21-DS02
 
 A recommender system is a type of information filtering system that suggests items or content to users based on their interests, preferences, or past behavior. These systems are commonly used in various domains, such as e-commerce, entertainment, social media, and online content platforms. I create a recommender system of movies for users such that:
  - System suggest some movies to the user based on user's favorite movies (list of movie ids)
@@ -38,6 +38,9 @@ movie-recommender-system
 │ 
 │
 ├── reports
-    └── final_report.md     # Report containing data exploration, solution exploration, training process, and evaluation
+|    └── final_report.md     # Report containing data exploration, solution exploration, training process, and evaluation
+|    ├── figures             # figures
+     
+
 
 ```
