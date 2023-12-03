@@ -10,7 +10,7 @@ A recommender system is a type of information filtering system that suggests ite
  * Ratings are ranged from 1 to 5
  * Each user has rated at least 20 movies
  
- ![top10](reports/figures/top10.png)
+ ![top10](https://github.com/akmchnkv/Movie-Recommender-System/blob/main/reports/figures%20/top10.png)
  
 Exploratory data analysis (EDA) revealed insights into the distribution of ratings, user preferences, and movie popularity. Additionally, we explored the diversity of movie genres and the frequency of user interactions with the system.
 **Insights:**
@@ -36,7 +36,7 @@ The core of the recommendation system is based on Matrix Factorization, a collab
 ## Training Process
 The training process involves minimizing the Mean Squared Error (MSE) loss between predicted and true ratings. The model is trained using a DataLoader to handle batches of training and validation data. The training progress is visualized through a plot of training and validation losses across epochs.
 
-![loss](reports/figures/loss.png)
+![loss](https://github.com/akmchnkv/Movie-Recommender-System/blob/main/reports/figures%20/loss.png)
 
 ## Evaluation
 The evaluation of the recommendation system involves assessing its predictive performance. We use Matrix Factorization to predict ratings for each user, excluding one movie at a time.
