@@ -10,6 +10,8 @@ A recommender system is a type of information filtering system that suggests ite
  - System suggest some movies to the user based on user's favorite movies (list of movie ids)
  - This task is solved using a machine learning model of collaborative filltering - **Matrix Factorization**
  - Notebooks have benchmark that evaluate the quality of recommendations of model
+ 
+ ![recommendations](reports/figures/recommendations.png)
 
 ## Prerequisites
 
