@@ -44,4 +44,6 @@ The evaluation of the recommendation system involves assessing its predictive pe
 ## Results
 The model's performance is summarized by the Mean Squared Error (=  1.1689), providing an indication of how well the predicted ratings align with the ground truth.
 
+![result](https://github.com/akmchnkv/Movie-Recommender-System/blob/main/reports/figures%20/result.png)
+
 In conclusion, the Matrix Factorization-based movie recommendation system demonstrates promising results in capturing user preferences and providing personalized suggestions. Further refinements and enhancements could address challenges such as the cold start problem and sparsity in user-item interactions.
